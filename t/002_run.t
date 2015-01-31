@@ -6,7 +6,7 @@ use strict;
 
 package Demo;
 use Time::HiRes 'usleep';
-use Any::Moose;
+use Moo;
 
 with 'MooseX::Role::Timer';
 

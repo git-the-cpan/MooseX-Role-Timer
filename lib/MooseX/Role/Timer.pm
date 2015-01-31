@@ -1,9 +1,7 @@
 package MooseX::Role::Timer;
-{
-  $MooseX::Role::Timer::VERSION = '0.04';
-}
-
-use Any::Moose '::Role';
+$MooseX::Role::Timer::VERSION = '0.05';
+#use Any::Moose '::Role';
+use Moo::Role;
 use Time::HiRes;
 use strict;
 use warnings;
@@ -41,7 +39,7 @@ whatever actions take.
 
 =cut
 
-has '_timers' => ( is=>'rw', isa=>'HashRef', default=>sub{{}} );
+has '_timers' => ( is=>'rw', default=>sub{{}} );
 
 =over 4
 
@@ -133,7 +131,7 @@ your bug as I make changes.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2014 Michael Langner, all rights reserved.
+Copyright 2015 Michael Langner, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the
 same terms as Perl itself.

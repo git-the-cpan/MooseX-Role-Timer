@@ -5,7 +5,7 @@ use warnings;
 use strict;
 
 package Demo;
-use Any::Moose;
+use Moo;
 
 with 'MooseX::Role::Timer';
 
